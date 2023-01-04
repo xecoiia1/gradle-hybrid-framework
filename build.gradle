@@ -90,7 +90,7 @@ test {
     }
     
     useTestNG(){
-        suites 'src/main/resources/runNopComMerceTest.xml'
+        suites 'src/test/resources/runNopComMerceTest.xml'
         outputDirectory = file("$projectDir/testng-report")
     }
     
