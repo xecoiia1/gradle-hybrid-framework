@@ -60,6 +60,9 @@ dependencies {
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
     compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.24'
     
+    // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
+	compile group: 'org.slf4j', name: 'slf4j-simple', version: '2.0.6'
+    
     // https://mvnrepository.com/artifact/velocity/velocity-dep
     compile group: 'velocity', name: 'velocity-dep', version: '1.4'
     
@@ -87,7 +90,7 @@ test {
     }
     
     useTestNG(){
-        suites 'src/test/resources/runNopComMerceTest.xml'
+        suites 'src/main/resources/runNopComMerceTest.xml'
         outputDirectory = file("$projectDir/testng-report")
     }
     
